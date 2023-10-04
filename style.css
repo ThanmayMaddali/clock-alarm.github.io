@@ -1,0 +1,106 @@
+/*stylesheet for the alarm */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*sets the background color black*/
+body{
+    background-color: black;
+    
+}
+/*page title alarm clock*/
+.page-title{
+    background-color: aliceblue;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container{
+
+    margin: auto;
+    padding: 1rem;
+    width: 80vw;
+    margin-top: 100px;
+}
+.current-time{
+    color:white;
+    font-size: 5rem;
+    padding: 2.5rem;
+    
+}
+.d-flex{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.alarm-form {
+    display: flex;
+    justify-content: space-around;
+}
+/*alaram container and buttons and selects options */
+
+.btn{
+    outline: None;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 0.3rem;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+select{
+    appearance: none;
+    outline: none;
+    background-color: white;
+    padding: 0.2rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.3rem;
+}
+.clock-container{
+    min-height: 100vh;
+}
+.btn:hover,.btn:focus{
+    box-shadow: black 2px 2px 2px 1px inset,black -2px -2px 10px 1px inset;
+}
+/* alarm containers*/
+.set-alarm-container{
+    width:100%;
+}
+.set-alarm-container,.set-alarm-container-title{
+    color:white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.alarms-container{
+    color:white;
+}
+.alarm{
+    justify-content: space-between;
+    border-radius: 30px;
+    padding:0.5rem 1rem;
+    align-items: center;
+    color: white;
+
+}
+/*delete alarm*/
+.alarm .delete-alarm{
+    border-radius: 2rem;
+    background-color:yellow ;
+    font-weight: bold;
+    color:white;
+    font-size: xx-medium;
+}
+.time{
+    color:white;
+    font-size: 1rem;
+    font-weight:bold;
+}
